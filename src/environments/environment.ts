@@ -3,14 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: 'AIzaSyAgwfWLnwwQVXuABdWbqYyQq5Ideaebsvw',
+    authDomain: 'weather-forecast-42591.firebaseapp.com',
+    databaseURL: 'https://weather-forecast-42591.firebaseio.com',
+    projectId: 'weather-forecast-42591',
+    storageBucket: 'weather-forecast-42591.appspot.com',
+    messagingSenderId: '565933762462',
+    appId: '1:565933762462:web:22be00cd0d4b947318d88f',
+    measurementId: 'G-QPTB5ZH9BN',
+  },
+  weatherUrl: 'https://api.weatherbit.io/v2.0/forecast/daily',
+  weatherKey: 'bcf7670eefdb46aa9d3409e3157b6846',
 };
-
-/*
- * For easier debugging in development mode, you can import the following file
- * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
- *
- * This import should be commented out in production mode because it will have a negative impact
- * on performance if an error is thrown.
- */
-// import 'zone.js/dist/zone-error';  // Included with Angular CLI.

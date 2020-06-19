@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="card__date">
+    {{ weather.date }}
+  </div>
+  <div class="card__weather">
+    {{ weather.weather }}
+  </div>
+  <div class="card__icon">
+    <img [src]="weather.icons" alt="" />
+  </div>
+  <div class="card__temp">
+    <span>Day: {{ weather.maxTemp }} Night: {{ weather.minTemp }}</span>
+  </div>
+</div>

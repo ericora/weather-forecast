@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "weather-forecast-42591": {
+      "hosting": {
+        "weather-forecast": [
+          "weather-forecast-42591"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "weather-forecast-42591"
+  }
+}
