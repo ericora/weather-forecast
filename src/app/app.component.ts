@@ -11,12 +11,9 @@ export class AppComponent implements OnInit {
   title = 'weather-forecast';
   weathers: Observable<any>;
   constructor(private fs: ForecastsService) {}
-  ngOnInit(): void {
-    this.fs.getDailyForecast(42, 50).subscribe((res) => console.log(res));
-  }
+  ngOnInit(): void {}
 
   handleAddressChange(address) {
-    console.log(address.geometry.location);
     const lat = address.geometry.location.lat();
     const lng = address.geometry.location.lng();
     this.weathers = this.fs.getDailyForecast(lat, lng);
